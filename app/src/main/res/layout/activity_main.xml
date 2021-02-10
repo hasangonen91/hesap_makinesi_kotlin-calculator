@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="ilk rakamı giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="ikinci rakamı giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="189dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/sonuc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            android:onClick="topla"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            android:onClick="cikar"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            android:onClick="carp"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            android:onClick="bol"
+            android:text="/" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="280dp"
+        android:text="Sonuc : "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
