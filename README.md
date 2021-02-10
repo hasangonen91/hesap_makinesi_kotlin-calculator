@@ -1,2 +1,2 @@
 # hesap_makinesi_kotlin-calculator
-hesap_makinesi_kotlin/calculator
+android hesap_makinesi_kotlin/calculator
